@@ -188,3 +188,9 @@ body {
   color: black;
   height: 100%;
 }
+
+@media (max-width: 500px) {
+  .flickity-prev-next-button {
+    display: none;
+  }
+}
