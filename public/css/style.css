@@ -1,0 +1,190 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+}
+
+.flickity-viewport {
+  height: 5rem;
+}
+
+.gallery-cell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
+  width: 5rem;
+  height: 100%;
+  margin-right: 10px;
+  counter-increment: gallery-cell;
+}
+
+.flickity-prev-next-button {
+  background-color: black;
+  width: 30px;
+  height: 50%;
+  border-radius: 5px;
+}
+
+.flickity-prev-next-button:active {
+  background-color: #003f91;
+}
+
+.flickity-prev-next-button:hover {
+  background-color: #003f91;
+}
+
+/* icon color */
+.flickity-button-icon {
+  fill: white;
+}
+
+.gallery-cell.is-selected {
+  height: 100%;
+  color: white;
+  border-radius: 50px;
+  background: rgba(0, 63, 145, 0.8);
+  border: solid 1px #fff;
+}
+
+.flickity-enabled:focus .flickity-viewport {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.flickity-enabled.is-draggable .flickity-viewport {
+  cursor: pointer;
+}
+
+.swap-btn-flip {
+  animation: rotate 0.2s ease-in-out;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(180deg);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: #eef1ef;
+  padding-bottom: 10px;
+  font-family: "Mukta", "Segoe", "Arial", sans-serif;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.main h1 {
+  margin: 10px 0;
+  font-family: "Pacifico";
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  text-align: center;
+}
+
+.middle-div {
+  height: 80%;
+  width: auto;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.middle-div div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.middle-div div label {
+  right: 8rem;
+  position: absolute;
+  transition: 0.2s ease-out;
+}
+
+.middle-div input {
+  width: 7rem;
+  font-size: 2.4rem;
+  text-align: center;
+  border: none;
+  background: transparent;
+  text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;
+  font-family: "Mukta", "Segoe", "Arial", sans-serif;
+  font-weight: bold;
+  outline: none;
+}
+
+.middle-div input::-webkit-outer-spin-button, .middle-div input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.button-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.button-div .convert-btn {
+  height: 70px;
+  width: 200px;
+  border-radius: 30px;
+  letter-spacing: 2px;
+  background-color: #003f91;
+  font-size: 2rem;
+  color: white;
+  font-family: "Pacifico";
+  border: none;
+  outline: none;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.button-div .convert-btn:active {
+  background: #003478;
+  box-shadow: inset 0px 0px 5px #c1c1c1;
+  outline: none;
+}
+
+.button-div .change-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70px;
+  width: 70px;
+  border-radius: 50px;
+  color: white;
+  background-color: #003f91;
+  font-size: 2rem;
+  outline: none;
+  border: solid 1px #fff;
+  cursor: pointer;
+}
+
+.carousel {
+  color: black;
+  height: 100%;
+}

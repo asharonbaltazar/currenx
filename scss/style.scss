@@ -1,0 +1,128 @@
+@import "config";
+@import "flickity";
+@import "animations";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  margin: 0;
+  background-color: $primary;
+  padding-bottom: 10px;
+  font-family: $font-stack;
+}
+
+.main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+
+  h1 {
+    margin: 10px 0;
+    font-family: $fancy-font;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+      -1px 1px 0 #fff;
+    text-align: center;
+  }
+}
+
+.middle-div {
+  height: 80%;
+  width: auto;
+  display: flex;
+  font-size: 2rem;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+
+  div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    label {
+      right: 8rem;
+      position: absolute;
+      transition: 0.2s ease-out;
+    }
+  }
+
+  input {
+    width: 7rem;
+    font-size: 2.4rem;
+    text-align: center;
+    border: none;
+    background: transparent;
+    text-shadow: 1px 1px 0 #fff, -1px -1px 0 #fff, 1px -1px 0 #fff,
+      -1px 1px 0 #fff;
+    font-family: $font-stack;
+    font-weight: bold;
+    outline: none;
+
+    // Chrome, Safari, Edge, Opera
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+  }
+}
+
+.button-div {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+
+  .convert-btn {
+    height: 70px;
+    width: 200px;
+    border-radius: 30px;
+    letter-spacing: 2px;
+    background-color: $secondary;
+    font-size: 2rem;
+    color: white;
+    font-family: $fancy-font;
+    border: none;
+    outline: none;
+    border: solid 1px $accent;
+    cursor: pointer;
+
+    &:active {
+      background: darken($secondary, 5%);
+      -webkit-box-shadow: inset 0px 0px 5px #c1c1c1;
+      -moz-box-shadow: inset 0px 0px 5px #c1c1c1;
+      box-shadow: inset 0px 0px 5px #c1c1c1;
+      outline: none;
+    }
+  }
+
+  .change-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // position: absolute;
+    // margin-left: 10rem;
+    height: 70px;
+    width: 70px;
+    border-radius: 50px;
+    color: white;
+    background-color: $secondary;
+    font-size: 2rem;
+    outline: none;
+    border: solid 1px $accent;
+    cursor: pointer;
+  }
+}
+
+.carousel {
+  color: black;
+  height: 100%;
+}

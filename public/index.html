@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Currency Exchange</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="header-top"><h1>Currency Exchange</h1></div>
+      <div class="top-carousel main-gallery js-flickity" data-flickity>
+        <div class="gallery-cell">AUD</div>
+        <div class="gallery-cell">BGN</div>
+        <div class="gallery-cell">BRL</div>
+        <div class="gallery-cell">CAD</div>
+        <div class="gallery-cell">CHF</div>
+        <div class="gallery-cell">CNY</div>
+        <div class="gallery-cell">CZK</div>
+        <div class="gallery-cell">DKK</div>
+        <div class="gallery-cell">GBP</div>
+        <div class="gallery-cell">HKD</div>
+        <div class="gallery-cell">HUF</div>
+        <div class="gallery-cell">IDR</div>
+        <div class="gallery-cell">ILS</div>
+        <div class="gallery-cell">INR</div>
+        <div class="gallery-cell">ISK</div>
+        <div class="gallery-cell">JPY</div>
+        <div class="gallery-cell">KRW</div>
+        <div class="gallery-cell">MXN</div>
+        <div class="gallery-cell">MYR</div>
+        <div class="gallery-cell">NOK</div>
+        <div class="gallery-cell">NZD</div>
+        <div class="gallery-cell">PHP</div>
+        <div class="gallery-cell">PLN</div>
+        <div class="gallery-cell">RON</div>
+        <div class="gallery-cell">RUB</div>
+        <div class="gallery-cell">SEK</div>
+        <div class="gallery-cell">SGD</div>
+        <div class="gallery-cell">THB</div>
+        <div class="gallery-cell">TRY</div>
+        <div class="gallery-cell">USD</div>
+        <div class="gallery-cell">ZAR</div>
+      </div>
+      <div class="middle-div">
+        <div>
+          <label id="top-label" for="top-value"></label>
+          <input
+            class="top-value"
+            id="top-value"
+            type="number"
+            placeholder="0"
+            value="1"
+          />
+        </div>
+
+        <div class="button-div">
+          <!-- <button class="convert-btn" id="convert-btn">Convert</button> -->
+          <button class="change-btn" id="change-btn">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              x="0px"
+              y="0px"
+              width="26"
+              height="26"
+              viewBox="0 0 172 172"
+              style="fill: #000000;"
+            >
+              <g
+                fill="none"
+                fill-rule="nonzero"
+                stroke="none"
+                stroke-width="1"
+                stroke-linecap="butt"
+                stroke-linejoin="miter"
+                stroke-miterlimit="10"
+                stroke-dasharray=""
+                stroke-dashoffset="0"
+                font-family="none"
+                font-weight="none"
+                font-size="none"
+                text-anchor="none"
+                style="mix-blend-mode: normal;"
+              >
+                <path d="M0,172v-172h172v172z" fill="none"></path>
+                <g fill="#ffffff">
+                  <path
+                    d="M36.33293,13.23077c-0.78062,0 -1.56113,0.29645 -2.20944,0.87861c-0.63508,0.56892 -17.40776,16.28336 -26.90084,32.40505c-0.73431,1.24369 -0.80904,2.8503 -0.19381,4.17338c0.62185,1.32308 1.82988,2.14483 3.13972,2.14483l16.29297,0.09044v62.84615c0,19.97697 16.40765,36.38462 36.38462,36.38462c19.97697,0 36.38462,-16.40765 36.38462,-36.38462v-59.53846c0,-9.2498 7.28866,-16.53846 16.53846,-16.53846c9.2498,0 16.53846,7.28866 16.53846,16.53846v62.84615l-16.30589,0.09045c-1.30985,0 -2.50496,0.82176 -3.1268,2.14483c-0.61523,1.32308 -0.5468,2.92968 0.18089,4.17337c9.49969,16.12169 26.27868,31.83613 26.91376,32.40505c0.65492,0.58215 1.42221,0.8786 2.20944,0.8786c0.78723,0 1.56774,-0.29646 2.20943,-0.8786c0.62846,-0.56892 17.51113,-16.3738 27.00421,-32.4955c0.73431,-1.25031 0.80904,-2.8503 0.19381,-4.17337c-0.61523,-1.31646 -1.82326,-2.14483 -3.13972,-2.14483h-16.29297v-62.84615c0,-19.97697 -16.40765,-36.38462 -36.38462,-36.38462c-19.97697,0 -36.38462,16.40765 -36.38462,36.38462v59.53846c0,9.2498 -7.28866,16.53846 -16.53846,16.53846c-9.2498,0 -16.53846,-7.28866 -16.53846,-16.53846v-62.84615h16.29297c1.31646,0 2.52449,-0.82837 3.13972,-2.14483c0.61523,-1.31646 0.5405,-2.92307 -0.19381,-4.17338c-9.49308,-16.12169 -26.37574,-31.92657 -27.00421,-32.49549c-0.64169,-0.58215 -1.4222,-0.87861 -2.20944,-0.87861z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </button>
+        </div>
+        <div>
+          <label id="bottom-label" for="bottom-value"></label>
+          <input
+            class="bottom-value"
+            id="bottom-value"
+            type="number"
+            placeholder="0"
+            value="1"
+          />
+        </div>
+      </div>
+      <div class="bottom-carousel main-gallery js-flickity">
+        <div class="gallery-cell">AUD</div>
+        <div class="gallery-cell">BGN</div>
+        <div class="gallery-cell">BRL</div>
+        <div class="gallery-cell">CAD</div>
+        <div class="gallery-cell">CHF</div>
+        <div class="gallery-cell">CNY</div>
+        <div class="gallery-cell">CZK</div>
+        <div class="gallery-cell">DKK</div>
+        <div class="gallery-cell">GBP</div>
+        <div class="gallery-cell">HKD</div>
+        <div class="gallery-cell">HUF</div>
+        <div class="gallery-cell">IDR</div>
+        <div class="gallery-cell">ILS</div>
+        <div class="gallery-cell">INR</div>
+        <div class="gallery-cell">ISK</div>
+        <div class="gallery-cell">JPY</div>
+        <div class="gallery-cell">KRW</div>
+        <div class="gallery-cell">MXN</div>
+        <div class="gallery-cell">MYR</div>
+        <div class="gallery-cell">NOK</div>
+        <div class="gallery-cell">NZD</div>
+        <div class="gallery-cell">PHP</div>
+        <div class="gallery-cell">PLN</div>
+        <div class="gallery-cell">RON</div>
+        <div class="gallery-cell">RUB</div>
+        <div class="gallery-cell">SEK</div>
+        <div class="gallery-cell">SGD</div>
+        <div class="gallery-cell">THB</div>
+        <div class="gallery-cell">TRY</div>
+        <div class="gallery-cell">USD</div>
+        <div class="gallery-cell">ZAR</div>
+      </div>
+    </div>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.js"
+      integrity="sha256-2JRzNxMJiS0aHOJjG+liqsEOuBb6++9cY4dSOyiijX4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
