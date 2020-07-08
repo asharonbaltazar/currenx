@@ -119,13 +119,14 @@ body {
 }
 
 .middle-div div label {
-  right: 8rem;
+  right: 10rem;
+  font-weight: bold;
   position: absolute;
   transition: 0.2s ease-out;
 }
 
 .middle-div input {
-  width: 7rem;
+  width: 10rem;
   font-size: 2.4rem;
   text-align: center;
   border: none;
